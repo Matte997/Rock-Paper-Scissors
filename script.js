@@ -16,7 +16,7 @@ buttons.forEach((button) => {
     }else if(playerPoints === 5){
       div3.textContent = "Giocatore vince!"
     }else{
-      div3.textContent = "In attesa dei risultati.. "
+      div3.textContent = ""
     }
   });
 });
