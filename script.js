@@ -12,9 +12,9 @@ buttons.forEach((button) => {
   button.addEventListener('click', () => {
     div2.textContent = playRound(button.className, computerPlay());
     if(computerPoints === 5) {
-      div3.textContent = "Computer win..so sad! Refresh the page to play again";
+      div3.textContent = "Computer win..so sad! Press the button below to play again";
     }else if(playerPoints === 5){
-      div3.textContent = "You win! Refresh the page to play again"
+      div3.textContent = "You win! Press the button below to play again"
     }else{
       div3.textContent = ""
     }
