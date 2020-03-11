@@ -1,10 +1,8 @@
-let div = document.querySelector('div');
-
 let div2 = document.createElement('div');
-div.appendChild(div2);
+document.body.appendChild(div2);
 
 let div3 = document.createElement('div');
-div.appendChild(div3);
+document.body.appendChild(div3);
 
 let buttons = document.querySelectorAll('button');
 
@@ -26,6 +24,7 @@ let playAgainButton = document.getElementById('playagain');
 playAgainButton.addEventListener('click', function() {
   computerPoints = 0;
   playerPoints = 0;
+  div3.textContent = "";
 });
 
 
@@ -69,7 +68,6 @@ playerSelection = playerSelection.replace(/scissors/i, 'scissors');
     return ('Rematch');
   }
 }
-
 
 
   
