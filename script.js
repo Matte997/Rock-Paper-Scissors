@@ -10,9 +10,9 @@ buttons.forEach((button) => {
   button.addEventListener('click', () => {
     div2.textContent = playRound(button.className, computerPlay());
     if(computerPoints === 5) {
-      div3.textContent = "Computer win..so sad! Press the button below to play again!";
+      div3.textContent = "Computer win..so sad! Press the button above to play again!";
     }else if(playerPoints === 5){
-      div3.textContent = "You win! Press the button below to play again!"
+      div3.textContent = "You win! Press the button above to play again!"
     }else{
       div3.textContent = ""
     }
@@ -26,7 +26,6 @@ playAgainButton.addEventListener('click', function() {
   playerPoints = 0;
   div3.textContent = "";
 });
-
 
 
 let computerPoints = 0;
