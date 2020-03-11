@@ -21,6 +21,14 @@ buttons.forEach((button) => {
   });
 });
 
+let playAgainButton = document.getElementById('playagain');
+
+playAgainButton.addEventListener('click', function() {
+  computerPoints = 0;
+  playerPoints = 0;
+});
+
+
 
 let computerPoints = 0;
 let playerPoints = 0;
@@ -58,7 +66,7 @@ playerSelection = playerSelection.replace(/scissors/i, 'scissors');
   } else if (playerSelection == computerSelection) {
     return ('Pareggio');
   } else {
-    return ('Errore');
+    return ('Rematch');
   }
 }
 
