@@ -10,21 +10,17 @@ buttons.forEach((button) => {
   button.addEventListener('click', () => {
     div2.textContent = playRound(button.className, computerPlay());
     if(computerPoints === 5) {
-      div3.textContent = "Computer win..so sad! Press the button above to play again!";
+      div3.textContent = "Computer win..so sad!";
+      computerPoints = 0;
+      playerPoints = 0;
     }else if(playerPoints === 5){
-      div3.textContent = "You win! Press the button above to play again!"
+      div3.textContent = "You win! The CPU has been destroyed"
+      computerPoints = 0;
+      playerPoints = 0;
     }else{
       div3.textContent = ""
     }
   });
-});
-
-let playAgainButton = document.getElementById('playagain');
-
-playAgainButton.addEventListener('click', function() {
-  computerPoints = 0;
-  playerPoints = 0;
-  div3.textContent = "";
 });
 
 
